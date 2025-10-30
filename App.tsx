@@ -12,6 +12,7 @@ import Modal from './components/Modal';
 import CourseDetailModal from './components/CourseDetailModal';
 import EnrollmentModal from './components/EnrollmentModal';
 import { Course } from './types';
+import Chatbot from './components/Chatbot';
 
 function App() {
   const [activeModal, setActiveModal] = useState<'none' | 'info' | 'details' | 'enrollment'>('none');
@@ -76,6 +77,7 @@ function App() {
           onClose={closeModal}
         />
       )}
+      <Chatbot />
     </div>
   );
 }
